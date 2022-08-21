@@ -1,8 +1,8 @@
-package com.mhd.spacexrockets.di
+package com.mhd.core_network.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.mhd.spacexrockets.data.network.ApiService
+import com.mhd.core_network.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

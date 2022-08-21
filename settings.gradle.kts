@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "SpaceX rockets"
 include(":app")
+include(":core-network")
