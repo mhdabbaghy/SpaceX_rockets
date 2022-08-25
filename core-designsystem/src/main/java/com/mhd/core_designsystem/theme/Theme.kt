@@ -1,4 +1,4 @@
-package com.mhd.spacexrockets.ui.theme
+package com.mhd.core_designsystem.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

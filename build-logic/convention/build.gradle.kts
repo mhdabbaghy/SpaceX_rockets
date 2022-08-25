@@ -10,20 +10,30 @@ java {
 }
 
 dependencies {
-    implementation(libs.android.gradlePlugin)
-    implementation(libs.kotlin.gradlePlugin)
+    compileOnly(libs.android.gradlePlugin)
+    compileOnly(libs.kotlin.gradlePlugin)
 }
 
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "spacexrocekts.android.application"
+            id = "spacexrockets.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
 
         register("androidApplicationCompose") {
-            id = "spacexrocekts.android.application.compose"
+            id = "spacexrockets.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
+
+        register("androidLibrary") {
+            id = "spacexrockets.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+
+        register("androidLibraryCompose") {
+            id = "spacexrockets.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
     }
 }
